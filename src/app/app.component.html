@@ -1,0 +1,62 @@
+<div class="box">
+  <h1>Demo Project</h1>
+  <nav class="box__menu">
+    <ul class="box__menu__lista">
+      <ng-container *ngFor="let item of rooms | async">
+        <li
+          [class.active]="isActive === item.name"
+          (click)="device(item)"
+          class="box__menu__lista__item"
+        >
+          {{ item.name }}
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  <!-- <app-sky-tv></app-sky-tv> -->
+  <div class="dial">
+    <ng-container>
+      <ng-container *ngFor="let item of components | async">
+        <ng-container *ngFor="let item of item.dial">
+          <div
+            (click)="checkData($event)"
+            [attr.data-numbers]="item.data"
+            [ngClass]="
+              true ? ' animate__animated animate__fadeInDown dial__item' : ''
+            "
+            [class]="item.klasa"
+            class="dial__item"
+          >
+            <div [attr.data-numbers]="item.data" class="dial__item__top">
+              <p [attr.data-numbers]="item.data">{{ item.number }}</p>
+            </div>
+            <div [attr.data-numbers]="item.data" class="dial__item__bottom">
+              <p [attr.data-numbers]="item.data">{{ item.text }}</p>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <div class="boxBottom">
+    <div class="box__devices">
+      <ng-container *ngFor="let item of devices | async">
+        <div
+          [routerLink]="item.link"
+          [class.active]="deviceActive === item.name"
+          [classList]="
+            true
+              ? ' animate__animated animate__fadeInDown  box__devices__device '
+              : ''
+          "
+          (click)="deviceCheck(item)"
+          class="box__devices__device"
+        >
+          <p>{{ item.name }}</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

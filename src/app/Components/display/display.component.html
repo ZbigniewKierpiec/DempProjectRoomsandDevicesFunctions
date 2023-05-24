@@ -1,0 +1,43 @@
+<!-- <div
+  *ngIf="name"
+  [classList]="
+    name
+      ? 'box animate__animated animate__fadeInDown'
+      : 'animate__animated animate__fadeOutUp'
+  "
+  class="box"
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> -->
+
+<div class="box">
+  <div class="box__dial">
+    <ng-container>
+      <ng-container *ngFor="let item of rooms">
+        <ng-container *ngFor="let item of item.dial">
+          <div *ngFor="let item of item.rooms" class="box__dial__item">
+            <div class="box__dial__item__top">
+              <p>{{ item.number }}</p>
+            </div>
+            <div class="box__dial__item__bottom">
+              <p>{{ item.text }}</p>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

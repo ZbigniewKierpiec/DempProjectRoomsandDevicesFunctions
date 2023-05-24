@@ -1,0 +1,12 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "name": "sky tv"
+    },
+    {
+      "id":2,
+      "name":"playstation"
+    }
+  ]
+}

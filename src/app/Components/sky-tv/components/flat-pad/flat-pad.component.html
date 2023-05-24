@@ -1,0 +1,16 @@
+<div class="box">
+  <ng-container *ngFor="let item of flatPad | async">
+    <div
+      class="box__cont"
+      [ngStyle]=" getGrid(item.gridColumns,item.gridColumnsWidth,item.gridGap,item.gridRows)"
+    >
+      <div *ngFor="let item of item.elements" class="box__cont__items">
+        {{ item.label }}
+      </div>
+
+      <!-- <div class="box__cont__items">2</div>
+<div class="box__cont__items">3</div>
+<div class="box__cont__items">4</div> -->
+    </div>
+  </ng-container>
+</div>

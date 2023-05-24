@@ -1,0 +1,39 @@
+<div class="box">
+  <ng-container *ngFor="let item of dpad | async">
+    <div
+      *ngFor="let item of item.elements"
+      [ngClass]="item.class"
+      class="box__item"
+    >
+      <div [ngClass]="item.classLine" class="box__item">
+        <div
+          [ngStyle]="{ 'background-color': item.color }"
+          [ngClass]="item.classDot"
+        >
+          <p>{{ item.text }}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- <div class="box__item box__item--right">
+    <div class="box__item--right__line">
+      <div class="box__item--right__line__dot"></div>
+    </div>
+  </div>
+  <div class="box__item box__item--bottom">
+    <div class="box__item--bottom__line">
+      <div class="box__item--bottom__line__dot"></div>
+    </div>
+  </div>
+  <div class="box__item box__item--center">
+ <div class="box__item--center__line">
+  <p>ok</p>
+ </div>
+  </div>
+  <div class="box__item box__item--left">
+    <div class="box__item--left__line">
+      <div class="box__item--left__line__dot"></div>
+    </div>
+  </div> -->
+</div>

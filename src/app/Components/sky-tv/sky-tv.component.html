@@ -1,0 +1,80 @@
+<div class="box">
+  <div class="box__numpad">
+    <div class="box__numpad__cont">
+      <ng-container *ngFor="let item of component | async">
+        <div
+          *ngFor="let item of item.elements"
+          class="box__numpad__cont__items"
+        >
+          <div class="box__numpad__cont__items__top">
+            <p>{{ item.label }}</p>
+          </div>
+          <div class="box__numpad__cont__items__bottom">
+            <p>{{ item.SecondaryLabel }}</p>
+          </div>
+        </div>
+      </ng-container>
+
+      <!-- <div class="box__numpad__cont__items">2</div>
+  <div class="box__numpad__cont__items">3</div>
+  <div class="box__numpad__cont__items">4</div>
+  <div class="box__numpad__cont__items">5</div>
+  <div class="box__numpad__cont__items">6</div>
+  <div class="box__numpad__cont__items">7</div>
+  <div class="box__numpad__cont__items">8</div>
+  <div class="box__numpad__cont__items">9</div>
+  <div class="box__numpad__cont__items">10</div>
+  <div class="box__numpad__cont__items">11</div>
+  <div class="box__numpad__cont__items">12</div> -->
+    </div>
+  </div>
+
+  <div class="box__colorBtn">
+    <div class="box__colorBtn__cont">
+      <ng-container *ngFor="let item of colorBtn | async">
+        <div
+          [ngStyle]="{ background: item.color }"
+          *ngFor="let item of item.elements"
+          class="box__colorBtn__cont__item"
+        ></div>
+      </ng-container>
+
+      <!-- <div class="box__colorBtn__cont__item"></div>
+<div class="box__colorBtn__cont__item"></div>
+<div class="box__colorBtn__cont__item"></div> -->
+    </div>
+  </div>
+
+  <div class="box__playback">
+    <div class="box__playback__box">
+      <ng-container *ngFor="let item of playBtn | async">
+        <div
+          [class]="item.class"
+          *ngFor="let item of item.elements"
+          class="box__playback__box__item"
+        >
+          <span><i class="{{ item.icon }}" aria-hidden="true"></i></span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="box__dpad">
+    <div class="box__dpad__cont">
+      <ng-container *ngFor="let item of type | async">
+        <ng-container *ngIf="item.type === 'DefaultDpad'; else elseTemplate">
+          <app-custom-dpad1></app-custom-dpad1>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <app-flat-pad></app-flat-pad>
+        </ng-template>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="box__reset">
+    <div class="box__reset__cont">
+      <h1>reset</h1>
+    </div>
+  </div>
+</div>

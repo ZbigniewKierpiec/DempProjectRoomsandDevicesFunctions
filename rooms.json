@@ -1,0 +1,360 @@
+{
+  "rooms": [
+    {
+      "name": "living room",
+      "deviceId": 1
+    },
+    {
+      "name": "Study",
+      "deviceId": 2
+    },
+    {
+      "name": "Master Bedroom",
+      "deviceId": 3
+    }
+  ],
+
+  "device": [
+    {
+      "id": 1,
+      "componentId": 1,
+      "name": "sky tv"
+    },
+    {
+      "id": 1,
+      "name": "apple tv"
+    },
+    {
+      "id": 1,
+      "name": "play station"
+    },
+    {
+      "id": 2,
+      "name": "radio"
+    },
+    {
+      "id": 2,
+      "name": "sky tv",
+      "link": "sky"
+    },
+    {
+      "id": 2,
+      "name": "apple tv"
+    },
+    {
+      "id": 3,
+      "name": "play station"
+    },
+    {
+      "id": 3,
+      "name": "sky tv"
+    }
+  ],
+
+  "components": [
+    {
+      "id": 1,
+      "componentId": 1,
+      "name": "sky tv",
+      "dial": [
+        {
+          "data": "button 1",
+          "number": 1,
+          "text": ""
+        },
+        {
+          "data": "button 2 abc",
+          "number": 2,
+          "text": "abc"
+        },
+        {
+          "data": "button 3 def",
+          "number": 3,
+          "text": "def"
+        },
+        {
+          "data": "button 4 ghi",
+          "number": 4,
+          "text": "ghi"
+        },
+        {
+          "data": "button 5 jkl",
+          "number": 5,
+          "text": "jkl"
+        },
+        {
+          "data": "button 6 mno",
+          "number": 6,
+          "text": "mno"
+        },
+        {
+          "data": "button 7 pqrs",
+          "number": 7,
+          "text": "pqrs"
+        },
+        {
+          "data": "button 8 tuy",
+          "number": 8,
+          "text": "tuy"
+        },
+        {
+          "data": "button 9 wzyz",
+          "number": 9,
+          "text": "wxyz"
+        },
+        {
+          "data": "button 0",
+          "number": 0,
+          "text": "",
+          "klasa": "last"
+        },
+
+        {
+          "data": "button 0",
+          "number": 0,
+          "text": ""
+        },
+
+        {
+          "number": 0,
+          "text": "",
+          "klasa": "last"
+        }
+      ]
+    }
+  ],
+
+  "Secend-devices": [
+    {
+      "deviceId": 1,
+      "deviceLabel": "Sky-TV",
+      "deviceIcon": "/sky_icon",
+      "deviceType": "ModularGrid",
+      "Modules": [
+        {
+          "ModuleId": 1,
+          "type": "ButtonPanel",
+          "gridDetails": { "x": 3, "y": 2, "height": 1, "width": 1 },
+          "elements": [
+            {
+              "ElementId": 1,
+              "label": "",
+              "icon": "/yellow-button",
+              "color": "pink"
+            },
+            {
+              "ElementId": 2,
+              "label": "",
+              "icon": "/blue-button",
+              "color": "green"
+            },
+            {
+              "ElementId": 3,
+              "label": "",
+              "icon": "/green-button",
+              "color": "yellow"
+            },
+            {
+              "ElementId": 4,
+              "label": "",
+              "icon": "/red-button",
+              "color": "blue"
+            }
+          ]
+        },
+        {
+          "ModuleId": 2,
+          "type": "DefaultDpad",
+          "gridDetails": { "x": 2, "y": 3, "height": 1, "width": 1 },
+          "elements": [
+            {
+              "id": 1,
+              "label": "top",
+              "color": "blue",
+              "class": "box__item--top",
+              "classLine": "box__item--top__line",
+              "classDot": "box__item--top__line__dot "
+            },
+            {
+              "id": 2,
+              "label": "right",
+              "color": "green",
+              "class": "box__item--right",
+              "classLine": "box__item--right__line",
+              "classDot": "box__item--right__line__dot"
+            },
+            {
+              "id": 3,
+              "label": "bottom",
+              "color": "red",
+              "class": "box__item--bottom",
+              "classLine": "box__item--bottom__line",
+              "classDot": "box__item--bottom__line__dot"
+            },
+
+            {
+              "id": 5,
+              "label": "left",
+              "color": "yellow",
+              "class": "box__item--left",
+              "classLine": "box__item--left__line",
+              "classDot": "box__item--left__line__dot"
+            },
+
+            {
+              "id": 4,
+              "label": "center",
+              "text": "ok",
+              "class": "box__item--center",
+              "classLine": "box__item--center__line",
+              "classDot": "box__item--center__line"
+            }
+          ]
+        },
+        {
+          "ModuleId": 3,
+          "type": "CustomNumpad",
+          "gridDetails": { "x": 1, "y": 2, "height": 2, "width": 1 },
+          "elements": [
+            {
+              "id": 1,
+              "label": "1",
+              "SecondaryLabel": "abc"
+            },
+            {
+              "id": 2,
+              "label": "2",
+              "SecondaryLabel": "def"
+            },
+            {
+              "id": 3,
+              "label": "3",
+              "SecondaryLabel": "ghi"
+            },
+            {
+              "id": 4,
+              "label": "4",
+              "SecondaryLabel": "jkl"
+            },
+            {
+              "id": 5,
+              "label": "5",
+              "SecondaryLabel": "mno"
+            },
+            {
+              "id": 6,
+              "label": "6",
+              "SecondaryLabel": "pqr"
+            },
+            {
+              "id": 7,
+              "label": "7",
+              "SecondaryLabel": "stu"
+            },
+            {
+              "id": 8,
+              "label": "8",
+              "SecondaryLabel": "vwx"
+            },
+            {
+              "id": 9,
+              "label": "9",
+              "SecondaryLabel": "yz."
+            },
+            {
+              "id": 10,
+              "label": "10",
+              "SecondaryLabel": "#/@"
+            },
+            {
+              "id": 5,
+              "label": "11",
+              "SecondaryLabel": "Delete"
+            },
+            {
+              "id": 5,
+              "label": "12",
+              "SecondaryLabel": "Enter"
+            }
+          ]
+        },
+        {
+          "ModuleId": 4,
+          "type": "ButtonPanel",
+          "gridDetails": { "x": 6, "y": 1, "height": 1, "width": 3 },
+          "elements": [
+            {
+              "ElementId": 1,
+              "label": "",
+              "icon": "fa-solid fa-backward",
+              "class": "a"
+            },
+            {
+              "ElementId": 2,
+              "label": "",
+              "icon": "fa-solid fa-stop"
+            },
+            {
+              "ElementId": 3,
+              "label": "",
+              "icon": "fa-solid fa-play"
+            },
+            {
+              "ElementId": 4,
+              "label": "",
+              "icon": "fa-solid fa-pause"
+            },
+
+            {
+              "ElementId": 5,
+              "label": "",
+              "icon": "fa-solid fa-record-vinyl",
+              "color": "red"
+            },
+
+            {
+              "ElementId": 6,
+              "label": "",
+              "icon": "fa-solid fa-forward",
+              "class": "b"
+            }
+          ]
+        },
+        {
+          "ModuleId": 5,
+          "type": "SingleButton",
+          "label": "Reset",
+          "icon": "",
+          "gridDetails": { "x": 4, "y": 4, "height": 1, "width": 1 }
+        },
+        {
+          "ModuleId": 6,
+          "type": "flatDpad",
+          "gridDetails": { "x": 2, "y": 3, "height": 1, "width": 1 },
+          "gridGap": "0.5",
+          "gridColumns": 4,
+          "gridRows": 2.5,
+          "gridColumnsWidth": 2.5,
+          "elements": [
+            {
+              "id": 1,
+              "label": 1
+            },
+            {
+              "id": 2,
+              "label": 2
+            },
+            {
+              "id": 3,
+              "label": 3
+            },
+            {
+              "id": 4,
+              "label": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

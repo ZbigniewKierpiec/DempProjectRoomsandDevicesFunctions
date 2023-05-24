@@ -1,0 +1,145 @@
+
+  "Secend-devices": [
+      {
+          "deviceId": 1,
+          "deviceLabel": "Sky-TV",
+          "deviceIcon": "/sky_icon",
+          "deviceType": "ModularGrid",
+          "Modules": [
+              {
+                  "ModuleId": 1,
+                  "type": "ButtonPanel",
+                  "gridDetails": { "x": 3, "y": 2, "height":1, "width": 1 },
+                  "elements": [
+                    {
+                      "ElementId": 1,
+                      "label": "",
+                      "icon": "/yellow-button"
+                    },
+                    {
+                      "ElementId": 2,
+                      "label": "",
+                      "icon": "/blue-button"
+                    },
+                    {
+                      "ElementId": 3,
+                      "label": "",
+                      "icon": "/green-button"
+                    },
+                    {
+                      "ElementId": 4,
+                      "label": "",
+                      "icon": "/red-button"
+                    }
+                  ]
+              },
+              {
+                  "ModuleId": 2,
+                  "type": "DefaultDpad",
+                  "gridDetails": { "x": 2, "y": 3, "height":1, "width": 1 }
+              },
+              {
+                  "ModuleId": 3,
+                  "type": "CustomNumpad",
+                  "gridDetails": { "x": 1, "y": 2, "height":2, "width": 1 },
+                  "elements": [
+                      {
+                      "id": 1,
+                      "label": "1",
+                      "SecondaryLabel": "abc"
+                      },
+                      {
+                      "id": 2,
+                      "label": "2",
+                      "SecondaryLabel": "def"
+                      },
+                      {
+                      "id": 3,
+                      "label": "3",
+                      "SecondaryLabel": "ghi"
+                      },
+                      {
+                      "id": 4,
+                      "label": "4",
+                      "SecondaryLabel": "jkl"
+                      },
+                      {
+                      "id": 5,
+                      "label": "5",
+                      "SecondaryLabel": "mno"
+                      },
+                      {
+                      "id": 6,
+                      "label": "6",
+                      "SecondaryLabel": "pqr"
+                      },
+                      {
+                      "id": 7,
+                      "label": "7",
+                      "SecondaryLabel": "stu"
+                      },
+                      {
+                      "id": 8,
+                      "label": "8",
+                      "SecondaryLabel": "vwx"
+                      },
+                      {
+                      "id": 9,
+                      "label": "9",
+                      "SecondaryLabel": "yz."
+                      },
+                      {
+                      "id": 10,
+                      "label": "10",
+                      "SecondaryLabel": "#/@"
+                      },
+                      {
+                      "id": 5,
+                      "label": "11",
+                      "SecondaryLabel": "Delete"
+                      },
+                      {
+                      "id": 5,
+                      "label": "12",
+                      "SecondaryLabel": "Enter"
+                      }
+                  ]
+              },
+              {
+                  "ModuleId": 4,
+                  "type": "ButtonPanel",
+                  "gridDetails": { "x": 1, "y": 4, "height":1, "width": 3 },
+                  "elements": [
+                    {
+                      "ElementId": 1,
+                      "label": "",
+                      "icon": "/fast-forward"
+                    },
+                    {
+                      "ElementId": 2,
+                      "label": "",
+                      "icon": "/play"
+                    },
+                    {
+                      "ElementId": 3,
+                      "label": "",
+                      "icon": "/pause"
+                    },
+                    {
+                      "ElementId": 4,
+                      "label": "",
+                      "icon": "/rewind"
+                    }
+                  ]
+              },
+              {
+                  "ModuleId": 5,
+                  "type": "SingleButton",
+                  "label": "Reset",
+                  "icon": "",
+                  "gridDetails": { "x": 4, "y": 4, "height":1, "width": 1 }
+              }
+          ]
+      }
+  ]
+
